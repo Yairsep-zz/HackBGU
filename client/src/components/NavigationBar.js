@@ -5,6 +5,13 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects";
+import Team from "./Team";
+import Technology from "./Catagories/Technology";
+import Marketing from "./Catagories/Marketing";
+import Design from "./Catagories/Design";
+import Consulting from "./Catagories/Consulting";
+import Student from "./Student";
+import Organization from "./Organization";
 
 function NavigationBar() {
   return (
@@ -15,6 +22,7 @@ function NavigationBar() {
           <Nav className="mr-auto">
             <Nav.Link href="/Home">Home</Nav.Link>
             <Nav.Link href="/About">About</Nav.Link>
+            <Nav.Link href="/Team">Team</Nav.Link>
             <Nav.Link href="/Projects">Projects</Nav.Link>
           </Nav>
         </Navbar>
@@ -25,8 +33,29 @@ function NavigationBar() {
           <Route path="/About">
             <About />
           </Route>
+          <Route path="/Team">
+            <Team />
+          </Route>
           <Route path="/Projects">
             <Projects />
+          </Route>
+          <Route path="/Student">
+            <Student />
+          </Route>
+          <Route path="/Organization">
+            <Organization />
+          </Route>
+          <Route path="/Technology">
+            <Technology />
+          </Route>
+          <Route path="/Marketing">
+            <Marketing />
+          </Route>
+          <Route path="/Design">
+            <Design />
+          </Route>
+          <Route path="/Consulting">
+            <Consulting />
           </Route>
         </Switch>
       </Router>
