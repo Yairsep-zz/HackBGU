@@ -6,26 +6,24 @@ import ProjectTicket from "./ProjectTicket";
 function Student() {
     return (
         <div>
-            <h1 style={{ textAlign: "center" }}>Student</h1>
+            <h1 style={{ textAlign: "center" }}>לסטודנטים</h1>
 
-            <div style={{ textAlign: "center"}}>
-                <Link to='/Technology'>
-                <Button>Technology</Button>
-                </Link>
-                <br/><br/>
-
+            <div className={"row"} style={{textAlign: "center", alignItems: "center"}}>
                 <Link to='/Marketing'>
-                <Button>Marketing</Button>
+                <Button variant={"outline-info"} style={{width: 250, height: 175, margin: 50}}>שיווק</Button>
                 </Link>
-
                 <br/><br/>
                 <Link to='/Design'>
-                <Button>Design</Button>
+                <Button variant={"outline-info"} style={{width: 250, height: 175, margin: 50}}>עיצוב</Button>
                 </Link>
                 <br/><br/>
                 <Link to='/Consulting'>
-                <Button>Consulting</Button>
+                <Button variant={"outline-info"} style={{width: 250, height: 175, margin: 50}}>ייעוץ</Button>
                 </Link>
+                <Link to='/Technology'>
+                <Button variant={"outline-info"} style={{width: 250, height: 175, margin: 50}}>טכנולוגיה</Button>
+                </Link>
+                <br/><br/>
             </div>
 
         </div>
