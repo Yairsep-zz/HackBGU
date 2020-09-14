@@ -9,21 +9,21 @@ function Student() {
             <h1 style={{ textAlign: "center" }}>לסטודנטים</h1>
 
             <div className={"row"} style={{textAlign: "center", alignItems: "center"}}>
-                <Link to='/Marketing'>
-                <Button variant={"outline-info"} style={{width: 250, height: 175, margin: 50}}>שיווק</Button>
+                <Link to='/Technology'>
+                <Button variant={"outline-info"} style={{width: 250, height: 175, margin: 50}}>טכנולוגיה</Button>
+                </Link>
+                <br/><br/>
+                <br/><br/>
+                <Link to='/Consulting'>
+                <Button variant={"outline-info"} style={{width: 250, height: 175, margin: 50}}>ייעוץ</Button>
                 </Link>
                 <br/><br/>
                 <Link to='/Design'>
                 <Button variant={"outline-info"} style={{width: 250, height: 175, margin: 50}}>עיצוב</Button>
                 </Link>
-                <br/><br/>
-                <Link to='/Consulting'>
-                <Button variant={"outline-info"} style={{width: 250, height: 175, margin: 50}}>ייעוץ</Button>
+                <Link to='/Marketing'>
+                <Button variant={"outline-info"} style={{width: 250, height: 175, margin: 50}}>שיווק</Button>
                 </Link>
-                <Link to='/Technology'>
-                <Button variant={"outline-info"} style={{width: 250, height: 175, margin: 50}}>טכנולוגיה</Button>
-                </Link>
-                <br/><br/>
             </div>
 
         </div>
