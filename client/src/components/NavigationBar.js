@@ -41,9 +41,11 @@ function NavigationBar() {
             <Student />
           </Route>
 
-          <Route path="/Organization">
-            <Organization />
-          </Route>
+
+          <Route path='/Organization' component={() => {
+            window.location.href = 'https://forms.gle/Xw49HPgduYF6cSYA6';
+            return null;
+          }}/>
           <Suspense fallback={<div style={{ textAlign: "center" }}><Spinner animation="border" variant="primary" /></div>}>
           <Route path="/Technology">
             <Technology />
