@@ -7,13 +7,13 @@ import {useFirestore, useFirestoreCollectionData} from "reactfire";
 function Consulting() {
 
     const collection = useFirestore().collection("Consulting");
-    const Marketing = useFirestoreCollectionData(collection);
+    const consulting = useFirestoreCollectionData(collection);
 
   return (
     <div>
       <h1 style={{ textAlign: "center" }}>Consulting</h1>
         <CardDeck>
-            {Consulting.map(({ name, desc, imageUrl }) => (
+            {consulting.map(({ name, desc, imageUrl }) => (
                 <Card
                     style={{ width: "18rem", direction: "rtl", textAlign: "right" }}
                 >
