@@ -17,15 +17,15 @@ import ProjectTicket from "./ProjectTicket";
 
 function NavigationBar() {
   return (
-    <div>
+    <div style={{direction: "rtl"}}>
       <Router>
-        <Navbar bg="dark" variant="dark" >
+        <Navbar bg="dark" variant="dark">
           <Navbar.Brand>BGU Hack</Navbar.Brand>
-          <Nav className="mr-auto">
-            <Nav.Link href="/Home">Home</Nav.Link>
-            <Nav.Link href="/About">About</Nav.Link>
-            <Nav.Link href="/Team">Team</Nav.Link>
-            <Nav.Link href="/Projects">Projects</Nav.Link>
+          <Nav className="ml-auto">
+            <Nav.Link href="/Home">ראשי</Nav.Link>
+            <Nav.Link href="/About">אודות</Nav.Link>
+            <Nav.Link href="/Team">הצוות</Nav.Link>
+            <Nav.Link href="/Projects">פרויקטים</Nav.Link>
           </Nav>
         </Navbar>
         <Switch>
