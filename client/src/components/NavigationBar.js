@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Suspense} from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -12,12 +12,14 @@ import Design from "./Catagories/Design";
 import Consulting from "./Catagories/Consulting";
 import Student from "./Student";
 import Organization from "./Organization";
+import Spinner from "react-bootstrap/Spinner";
+import ProjectTicket from "./ProjectTicket";
 
 function NavigationBar() {
   return (
     <div>
       <Router>
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="dark" variant="dark" >
           <Navbar.Brand>BGU Hack</Navbar.Brand>
           <Nav className="mr-auto">
             <Nav.Link href="/Home">Home</Nav.Link>
@@ -39,26 +41,38 @@ function NavigationBar() {
           <Route path="/Projects">
             <Projects />
           </Route>
+
           <Route path="/Student">
             <Student />
           </Route>
+
           <Route path="/Organization">
             <Organization />
           </Route>
+          <Suspense fallback={<div style={{ textAlign: "center" }}><Spinner animation="border" variant="primary" /></div>}>
           <Route path="/Technology">
             <Technology />
           </Route>
+
+
+          {/*<Suspense fallback={<div style={{ textAlign: "center" }}><Spinner animation="border" variant="primary" /></div>}>*/}
           <Route path="/Marketing">
-            <Marketing />
+            <Marketing/>
           </Route>
-          <Route path="/Design">
+
+
+         <Route path="/Design">
             <Design />
           </Route>
+
+
           <Route path="/Consulting">
             <Consulting />
           </Route>
+          </Suspense>
         </Switch>
       </Router>
+
     </div>
   );
 }

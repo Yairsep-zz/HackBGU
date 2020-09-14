@@ -4,10 +4,10 @@ import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
 import Button from "react-bootstrap/Button";
 function ProjectTicket() {
+
   const collection = useFirestore().collection("Coding");
   const coding = useFirestoreCollectionData(collection);
 
-  const size = "/100px160";
   return (
     <div>
       <h3>ProjectTicket</h3>
