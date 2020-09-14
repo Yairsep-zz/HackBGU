@@ -1,23 +1,23 @@
 import React, {Suspense} from "react";
 import Button from "react-bootstrap/Button";
 import {Link} from "react-router-dom";
-import Spinner from "react-bootstrap/Spinner";
-import ProjectTicket from "./ProjectTicket";
+
 function Student() {
     return (
-        <div>
+            <div style={{display: "block",
+                marginLeft: "auto",
+                marginRight: "auto"}}>
             <h1 style={{ textAlign: "center" }}>לסטודנטים</h1>
 
-            <div className={"row"} style={{textAlign: "center", alignItems: "center"}}>
+            <div class="row" style={{textAlign: "center", alignItems: "center" , justifyContent: "center"}}>
                 <Link to='/Technology'>
-                <Button variant={"outline-info"} style={{width: 250, height: 175, margin: 50}}>טכנולוגיה</Button>
+                <Button variant={"outline-info"} size="lg" block style={{width: 250, height: 175, margin: 50}}>טכנולוגיה</Button>
                 </Link>
-                <br/><br/>
-                <br/><br/>
                 <Link to='/Consulting'>
-                <Button variant={"outline-info"} style={{width: 250, height: 175, margin: 50}}>ייעוץ</Button>
+                <Button variant={"outline-info"} size="lg" block style={{width: 250, height: 175, margin: 50}}>ייעוץ</Button>
                 </Link>
-                <br/><br/>
+                </div>
+            <div className="row" style={{textAlign: "center", alignItems: "center", justifyContent: "center"}}>
                 <Link to='/Design'>
                 <Button variant={"outline-info"} style={{width: 250, height: 175, margin: 50}}>עיצוב</Button>
                 </Link>

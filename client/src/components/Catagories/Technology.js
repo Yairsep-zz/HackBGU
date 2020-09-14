@@ -4,7 +4,6 @@ import CardDeck from "react-bootstrap/CardDeck";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Spinner from "react-bootstrap/Spinner";
-import ProjectTicket from "../ProjectTicket";
 import {onLog} from "firebase";
 
 function Technology() {

@@ -4,7 +4,6 @@ import Nav from "react-bootstrap/Nav";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
-import Projects from "./Projects";
 import Team from "./Team";
 import Technology from "./Catagories/Technology";
 import Marketing from "./Catagories/Marketing";
@@ -13,7 +12,7 @@ import Consulting from "./Catagories/Consulting";
 import Student from "./Student";
 import Organization from "./Organization";
 import Spinner from "react-bootstrap/Spinner";
-import ProjectTicket from "./ProjectTicket";
+
 
 function NavigationBar() {
   return (
@@ -25,7 +24,6 @@ function NavigationBar() {
             <Nav.Link href="/Home">ראשי</Nav.Link>
             <Nav.Link href="/About">אודות</Nav.Link>
             <Nav.Link href="/Team">הצוות</Nav.Link>
-            <Nav.Link href="/Projects">פרויקטים</Nav.Link>
           </Nav>
         </Navbar>
         <Switch>
@@ -37,9 +35,6 @@ function NavigationBar() {
           </Route>
           <Route path="/Team">
             <Team />
-          </Route>
-          <Route path="/Projects">
-            <Projects />
           </Route>
 
           <Route path="/Student">
@@ -55,7 +50,6 @@ function NavigationBar() {
           </Route>
 
 
-          {/*<Suspense fallback={<div style={{ textAlign: "center" }}><Spinner animation="border" variant="primary" /></div>}>*/}
           <Route path="/Marketing">
             <Marketing/>
           </Route>

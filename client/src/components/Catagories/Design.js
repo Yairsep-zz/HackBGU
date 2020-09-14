@@ -16,8 +16,7 @@ function Design() {
                 <Card
                     style={{ width: "18rem", direction: "rtl", textAlign: "right" }}
                 >
-                    <Card.Img variant="top" src={imageUrl} />
-                    {console.log(imageUrl)}
+                    <Card.Img style={{width: "530px" , height:"300px"}} variant="top" src={imageUrl} />
                     <Card.Body>
                         <Card.Title>{name}</Card.Title>
                         <Card.Text>{desc}</Card.Text>
