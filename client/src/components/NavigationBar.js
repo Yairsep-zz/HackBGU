@@ -40,7 +40,7 @@ function NavigationBar() {
           <Route path="/Student">
             <Student />
           </Route>
-
+          {/**/}
           {/*<Route path="/Organization">*/}
           {/*  <Organization />*/}
           {/*</Route>*/}
