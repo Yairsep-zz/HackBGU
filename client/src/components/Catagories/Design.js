@@ -16,11 +16,12 @@ function Design() {
                 <Card
                     style={{ width: "18rem", direction: "rtl", textAlign: "right" }}
                 >
-                    <Card.Img style={{width: "530px" , height:"300px"}} variant="top" src={imageUrl} />
+                    <Card.Img variant="top" src={imageUrl} />
+                    {console.log(imageUrl)}
                     <Card.Body>
                         <Card.Title>{name}</Card.Title>
                         <Card.Text>{desc}</Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
+                        <Button variant="outline-primary" size="lg" block>בחר פרוייקט</Button>
                     </Card.Body>
                 </Card>
             ))}
