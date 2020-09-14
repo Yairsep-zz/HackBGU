@@ -22,7 +22,7 @@ function Consulting() {
                     <Card.Body>
                         <Card.Title>{name}</Card.Title>
                         <Card.Text>{desc}</Card.Text>
-                        <Button variant="outline-primary" size="lg" block>בחר פרוייקט</Button>
+                        <Button variant="outline-primary"  size="lg" block>בחר פרוייקט</Button>
                     </Card.Body>
                 </Card>
             ))}

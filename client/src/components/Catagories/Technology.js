@@ -18,14 +18,14 @@ function Technology() {
         <CardDeck>
             {coding.map(({ name, desc, imageUrl }) => (
                 <Card
-                    style={{ width: "18rem", direction: "rtl", textAlign: "right" }}
+                    style={{ width: "18rem", direction: "rtl", textAlign:  "right" }}
                 >
                     <Card.Img variant="top" src={imageUrl} />
                     {console.log(imageUrl)}
                     <Card.Body>
                         <Card.Title>{name}</Card.Title>
                         <Card.Text>{desc}</Card.Text>
-                        <Button variant="outline-primary" size="lg" block>בחר פרוייקט</Button>
+                        <Button variant="outline-primary"  size="lg" block>בחר פרוייקט</Button>
                     </Card.Body>
                 </Card>
             ))}
