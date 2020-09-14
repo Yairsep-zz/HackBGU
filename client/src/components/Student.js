@@ -11,10 +11,10 @@ function Student() {
 
             <div class="row" style={{textAlign: "center", alignItems: "center" , justifyContent: "center"}}>
                 <Link to='/Technology'>
-                <Button variant={"outline-info"} size="lg" block style={{width: 250, height: 175, margin: 50}}>טכנולוגיה</Button>
+                <Button variant={"outline-info"} style={{width: 250, height: 175, margin: 50}}>טכנולוגיה</Button>
                 </Link>
                 <Link to='/Consulting'>
-                <Button variant={"outline-info"} size="lg" block style={{width: 250, height: 175, margin: 50}}>ייעוץ</Button>
+                <Button variant={"outline-info"} style={{width: 250, height: 175, margin: 50}}>ייעוץ</Button>
                 </Link>
                 </div>
             <div className="row" style={{textAlign: "center", alignItems: "center", justifyContent: "center"}}>
