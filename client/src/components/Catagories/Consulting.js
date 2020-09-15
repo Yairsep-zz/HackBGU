@@ -18,7 +18,7 @@ function Consulting() {
                 <Card
                     style={{ width: "18rem", direction: "rtl", textAlign: "right", fontSize: "16px" }}
                 >
-                    <Card.Img variant="top" src={imageUrl} />
+                    <Card.Img style={{ width: "540px" , height: "400px"}}variant="top" src={imageUrl} />
                     {console.log(imageUrl)}
                     <Card.Body>
                         <Card.Title>{name}</Card.Title>
@@ -26,7 +26,7 @@ function Consulting() {
                         <Button variant="outline-primary"  size="lg" block onClick={(e) => {
                             e.preventDefault();
                             window.location.href=url;
-                        }}>בחר פרוייקט</Button>
+                        }}>פרטים והרשמה</Button>
                     </Card.Body>
                 </Card>
             ))}

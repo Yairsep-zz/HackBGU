@@ -28,7 +28,7 @@ function Technology() {
                         <Button variant="outline-primary"  size="lg" block onClick={(e) => {
                             e.preventDefault();
                             window.location.href=url;
-                        }}>בחר פרוייקט</Button>
+                        }}> פרטים והרשמה </Button>
                     </Card.Body>
                 </Card>
             ))}
