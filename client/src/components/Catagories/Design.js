@@ -18,10 +18,10 @@ function Design() {
                 >
                     <Card.Img style={{ width: "540px" , height: "400px"}}variant="top" src={imageUrl} />
                     {console.log(imageUrl)}
-                    <Card.Body>
+                    <Card.Body className={"d-flex flex-column"}>
                         <Card.Title>{name}</Card.Title>
                         <Card.Text>{desc}</Card.Text>
-                        <Button variant="outline-primary"  size="lg" block onClick={(e) => {
+                        <Button className={"mt-auto"} variant="outline-primary"  size="lg" block onClick={(e) => {
                             e.preventDefault();
                             window.location.href=url;
                         }}>פרטים והרשמה</Button>
