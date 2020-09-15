@@ -48,7 +48,7 @@ function NavigationBar() {
           {/*  <Organization />*/}
           {/*</Route>*/}
           <Route path='/Organization' component={() => {
-            window.location.href = 'https://forms.gle/Xw49HPgduYF6cSYA6';
+            window.location.href = 'https://form.jotform.com/202582746873061';
             return null;
           }}/>
           <Route path="/Technology">
