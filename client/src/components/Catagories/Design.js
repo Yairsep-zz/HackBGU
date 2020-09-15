@@ -10,18 +10,21 @@ function Design() {
 
   return (
     <div>
-      <h1 style={{ textAlign: "center" }}>Design</h1>
+      <h1 style={{ textAlign: "center" }}>עיצוב</h1>
         <CardDeck>
-            {design.map(({ name, desc, imageUrl }) => (
+            {design.map(({ name, desc, imageUrl , url }) => (
                 <Card
-                    style={{ width: "18rem", direction: "rtl", textAlign: "right" }}
+                    style={{ width: "18rem", direction: "rtl", textAlign: "right" , fontSize: "16px"}}
                 >
                     <Card.Img variant="top" src={imageUrl} />
                     {console.log(imageUrl)}
                     <Card.Body>
                         <Card.Title>{name}</Card.Title>
                         <Card.Text>{desc}</Card.Text>
-                        <Button variant="outline-primary"  size="lg" block>בחר פרוייקט</Button>
+                        <Button variant="outline-primary"  size="lg" block onClick={(e) => {
+                            e.preventDefault();
+                            window.location.href=url;
+                        }}>בחר פרוייקט</Button>
                     </Card.Body>
                 </Card>
             ))}

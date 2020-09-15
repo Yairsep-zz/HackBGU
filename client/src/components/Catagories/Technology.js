@@ -14,22 +14,25 @@ function Technology() {
   return (
     <div>
         {console.log(coding)}
-      <h1 style={{ textAlign: "center" }}>Technology</h1>
+      <h1 style={{ textAlign: "center" }}>טכנולוגיה</h1>
         <CardDeck>
-            {coding.map(({ name, desc, imageUrl }) => (
+            {coding.map(({ name, desc, imageUrl , url }) => (
                 <Card
-                    style={{ width: "18rem", direction: "rtl", textAlign:  "right" }}
+                    style={{ width: "18rem", direction: "rtl", textAlign:  "right" , fontSize: "16px"}}
                 >
-                    <Card.Img variant="top" src={imageUrl} />
+                    <Card.Img style={{ width: "540px" , height: "400px"}}variant="top" src={imageUrl} />
                     {console.log(imageUrl)}
                     <Card.Body>
                         <Card.Title>{name}</Card.Title>
                         <Card.Text>{desc}</Card.Text>
-                        <Button variant="outline-primary"  size="lg" block>בחר פרוייקט</Button>
+                        <Button variant="outline-primary"  size="lg" block onClick={(e) => {
+                            e.preventDefault();
+                            window.location.href=url;
+                        }}>בחר פרוייקט</Button>
                     </Card.Body>
                 </Card>
             ))}
-        </CardDeck>
+            </CardDeck>
     </div>
   );
 }

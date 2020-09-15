@@ -12,16 +12,18 @@ import Consulting from "./Catagories/Consulting";
 import Student from "./Student";
 import Organization from "./Organization";
 import Spinner from "react-bootstrap/Spinner";
-
+import "../App.css"
 
 function NavigationBar() {
   return (
-    <div style={{direction: "rtl"}}>
+    <div style={{direction: "rtl" , fontSize: "34px"}}>
       <Router>
-        <Navbar bg="dark" variant="dark">
-          <Navbar.Brand>BGU Hack</Navbar.Brand>
+        <Navbar className="navbar" variant="dark" expand="lg" >
+          {/*<Navbar.Brand>BGU Hack</Navbar.Brand>*/}
           <Nav className="ml-auto">
             <Nav.Link href="/Home">ראשי</Nav.Link>
+            <Nav.Link href="/Student">סטודנטים</Nav.Link>
+            <Nav.Link href="/Organization">ארגונים</Nav.Link>
             <Nav.Link href="/About">אודות</Nav.Link>
             <Nav.Link href="/Team">הצוות</Nav.Link>
           </Nav>
@@ -36,6 +38,7 @@ function NavigationBar() {
           <Route path="/Team">
             <Team />
           </Route>
+          <Suspense fallback={<div style={{ textAlign: "center" }}><Spinner animation="border" variant="primary" /></div>}>
 
           <Route path="/Student">
             <Student />
@@ -48,7 +51,6 @@ function NavigationBar() {
             window.location.href = 'https://forms.gle/Xw49HPgduYF6cSYA6';
             return null;
           }}/>
-          <Suspense fallback={<div style={{ textAlign: "center" }}><Spinner animation="border" variant="primary" /></div>}>
           <Route path="/Technology">
             <Technology />
           </Route>
