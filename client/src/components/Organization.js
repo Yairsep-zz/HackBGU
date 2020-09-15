@@ -5,6 +5,7 @@ function Organization() {
         <div>
             <h1 style={{ textAlign: "center" }}>Organization</h1>
         </div>
+        //
     );
 }
 

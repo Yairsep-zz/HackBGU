@@ -10,6 +10,7 @@ function About() {
             </h2>
         </div>
     </div>
+      //
   );
 }
 

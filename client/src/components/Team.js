@@ -10,6 +10,7 @@ function Team() {
       <h1 style={{ textAlign: "center" }}>הצוות</h1>
         <img src='team.png' class="center" height="70%" width="70%"/>
     </div>
+      //
   );
 }
 

@@ -33,6 +33,7 @@ function Technology() {
             ))}
             </CardDeck>
     </div>
+      //
   );
 }
 
