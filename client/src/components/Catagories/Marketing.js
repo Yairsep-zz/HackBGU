@@ -18,7 +18,6 @@ function Marketing() {
                     style={{ width: "18rem", direction: "rtl", textAlign: "right" , fontSize: "16px" }}
                 >
                     <Card.Img style={{ width: "540px" , height: "400px"}}variant="top" src={imageUrl} />
-                    {console.log(imageUrl)}
                     <Card.Body className={"d-flex flex-column"}>
                         <Card.Title>{name}</Card.Title>
                         <Card.Text>{desc}</Card.Text>

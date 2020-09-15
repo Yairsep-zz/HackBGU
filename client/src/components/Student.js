@@ -20,7 +20,6 @@ function Student() {
             marginLeft: "auto",
             marginRight: "auto"}}>
             {/*<h1 style={{ textAlign: "center" }}>לסטודנטים</h1>*/}
-            <br/>
             <AuthCheck  fallback={<div class="row" style={{textAlign: "center", alignItems: "center" , justifyContent: "center"}}>
                 <GoogleButton
                     onClick={() => { signIn() }}
